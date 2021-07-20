@@ -10,6 +10,7 @@ import java.util.TreeMap;
 public class WriteSymptomDataToFile implements ISymptomWriter {
 
 	static final String fileOuput = "result.out";
+	private PrintWriter out;
 
 	public WriteSymptomDataToFile() {
 	}
@@ -26,15 +27,18 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 
 		Set<String> keysOfMap = symptomeMap.keySet();
 
-		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(fileOuput)));
-
 		try {
+			out = new PrintWriter(new BufferedWriter(new FileWriter(fileOuput)));
+
 			for (String key : keysOfMap) {
 
-				out.println(key + ":" + symptomeMap.get(key));
-
-			}
-		} finally {
+				out.println(key + ":" + symptomeMap.get(key));}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+			
+		 finally {
 			out.close();
 		}
 
