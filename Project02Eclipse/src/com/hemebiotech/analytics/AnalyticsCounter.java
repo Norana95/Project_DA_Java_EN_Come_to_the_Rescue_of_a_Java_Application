@@ -29,7 +29,7 @@ public class AnalyticsCounter {
 /**
  * 
  * @param TreeMap
- * write to file
+ * write TreeMap to file
  */
 	public void WriterSymptoms(TreeMap<String, Integer> sympMap) {
 		WriteSymptomDataToFile writer = new WriteSymptomDataToFile();
