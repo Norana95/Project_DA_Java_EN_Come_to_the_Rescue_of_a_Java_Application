@@ -11,7 +11,7 @@ public class Application {
 
 		List<String> listSymptoms = anCounter.readerSymptoms();
 		TreeMap<String, Integer> symMap = anCounter.countingSymptoms(listSymptoms);
-		anCounter.WriterSymptoms(symMap);
+		anCounter.writerSymptoms(symMap);
 
 	}
 }

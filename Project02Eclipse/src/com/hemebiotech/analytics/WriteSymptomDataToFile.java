@@ -23,7 +23,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
 	 *       the file "result.out".
 	 */
 
-	public void WriterToFile(TreeMap<String, Integer> symptomeMap) throws IOException {
+	public void writerToFile(TreeMap<String, Integer> symptomeMap) throws IOException {
 
 		Set<String> keysOfMap = symptomeMap.keySet();
 

@@ -8,8 +8,9 @@ import java.util.TreeMap;
 public interface ISymptomWriter {
 	
 /**
- * write the list of symptoms to a file
- */
+ * @param TreeMap
+ 		* write the list of symptoms to a file
+ 		*/
 	
-	public void WriterToFile(TreeMap<String, Integer> symptomeMap) throws IOException;
+	public void writerToFile(TreeMap<String, Integer> symptomeMap) throws IOException;
 }

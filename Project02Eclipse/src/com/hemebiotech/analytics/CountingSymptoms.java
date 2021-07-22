@@ -5,17 +5,13 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * @author Norhene
- * @return a TreeMap
- *
+ * @param List
+ * @return TreeMap
  */
 public class CountingSymptoms implements ISymptomCounting {
 
-	
-
-	public CountingSymptoms() {	}
-
 	/**
+	 * @param List of symptoms
 	 * @return treeMap browse a list of symptoms line by line,counter number of
 	 *         occurrence and add it in a map<string,Integer>
 	 */

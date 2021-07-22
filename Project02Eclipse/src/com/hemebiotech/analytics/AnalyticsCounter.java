@@ -13,7 +13,7 @@ public class AnalyticsCounter {
  */
 	public List<String> readerSymptoms() {
 		ReadSymptomDataFromFile readerFile = new ReadSymptomDataFromFile(fileInput);
-		List<String> listSymptoms = readerFile.GetSymptoms();
+		List<String> listSymptoms = readerFile.getSymptoms();
 		return listSymptoms;
 	}
 /**
@@ -31,10 +31,10 @@ public class AnalyticsCounter {
  * @param TreeMap
  * write TreeMap to file
  */
-	public void WriterSymptoms(TreeMap<String, Integer> sympMap) {
+	public void writerSymptoms(TreeMap<String, Integer> sympMap) {
 		WriteSymptomDataToFile writer = new WriteSymptomDataToFile();
 		try {
-			writer.WriterToFile(sympMap);
+			writer.writerToFile(sympMap);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
