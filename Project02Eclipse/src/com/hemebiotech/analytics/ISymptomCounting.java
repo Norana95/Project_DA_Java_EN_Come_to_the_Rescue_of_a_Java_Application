@@ -11,8 +11,12 @@ import java.util.Map;
 
 public interface ISymptomCounting {
 	
-	/** count the number of occurrences of symptoms and put them in a TreeMap with their symptom key
- 		*/
+/** 
+ * @param List 
+ * @return TreeMap
+ * 
+	* count the number of occurrences of symptoms and put them in a TreeMap with their symptom key
+ 	*/
 	
 	public Map<String, Integer> counting(List<String> list);
 	
